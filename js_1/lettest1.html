@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            background-color: #a6f492;
+        }
+        #name{
+            background-color: #d4fe39;
+        }
+    </style>
+</head>
+<body>
+<h1>덧셈 계산기입니다. 버튼을 눌러 숫자를 입력해주세요?</h1>
+    <h1 id="test">덧셈결과</h1>    
+    <h1 id="name">이름출력</h1>
+    <button onclick="printnum()">더하기계산하기</button>
+    <button onclick="printname()">이름출력하기</button>
+<script>
+    let x=parseInt(prompt("더하고 싶은 첫번째 숫자를 입력하세요"));
+    let y=parseInt(prompt("더하고 싶은 두번째 숫자를 입력하세요"));
+    let z = x+y;
+    let str1 = prompt("이름을 입력해주세요");
+function printnum(){
+    document.getElementById("test").innerHTML =z;
+}  
+function printname(){
+    document.getElementById("name").innerHTML =str1;
+}
+</script>
+</body>
+</html>
